@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCC207FA2673E63000EAAA4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC207F92673E63000EAAA4C /* AppDelegate.swift */; };
+		FCC207FC2673E63000EAAA4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC207FB2673E63000EAAA4C /* SceneDelegate.swift */; };
+		FCC207FE2673E63000EAAA4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC207FD2673E63000EAAA4C /* ViewController.swift */; };
+		FCC208012673E63000EAAA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC207FF2673E63000EAAA4C /* Main.storyboard */; };
+		FCC208032673E63600EAAA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC208022673E63600EAAA4C /* Assets.xcassets */; };
+		FCC208062673E63600EAAA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC208042673E63600EAAA4C /* LaunchScreen.storyboard */; };
+		FCC208142673E71D00EAAA4C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC208122673E71D00EAAA4C /* Interface.storyboard */; };
+		FCC208162673E71F00EAAA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC208152673E71F00EAAA4C /* Assets.xcassets */; };
+		FCC2081D2673E71F00EAAA4C /* Grocery List watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCC2081C2673E71F00EAAA4C /* Grocery List watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCC208222673E71F00EAAA4C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC208212673E71F00EAAA4C /* InterfaceController.swift */; };
+		FCC208242673E71F00EAAA4C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC208232673E71F00EAAA4C /* ExtensionDelegate.swift */; };
+		FCC208262673E71F00EAAA4C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC208252673E71F00EAAA4C /* NotificationController.swift */; };
+		FCC208282673E71F00EAAA4C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC208272673E71F00EAAA4C /* ComplicationController.swift */; };
+		FCC2082A2673E72000EAAA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC208292673E72000EAAA4C /* Assets.xcassets */; };
+		FCC2082F2673E72000EAAA4C /* Grocery List watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FCC208102673E71D00EAAA4C /* Grocery List watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCC208542674D4BF00EAAA4C /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC208532674D4BF00EAAA4C /* RowController.swift */; };
+		FCC2087A2676773700EAAA4C /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC208792676773700EAAA4C /* Row.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCC2081E2673E71F00EAAA4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC207EE2673E63000EAAA4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC2081B2673E71F00EAAA4C;
+			remoteInfo = "Grocery List watch Extension";
+		};
+		FCC2082D2673E72000EAAA4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC207EE2673E63000EAAA4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC2080F2673E71D00EAAA4C;
+			remoteInfo = "Grocery List watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCC208332673E72000EAAA4C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FCC2081D2673E71F00EAAA4C /* Grocery List watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC208372673E72000EAAA4C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FCC2082F2673E72000EAAA4C /* Grocery List watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FCC207F62673E63000EAAA4C /* Grocery List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC207F92673E63000EAAA4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCC207FB2673E63000EAAA4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCC207FD2673E63000EAAA4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCC208002673E63000EAAA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCC208022673E63600EAAA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC208052673E63600EAAA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCC208072673E63600EAAA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC208102673E71D00EAAA4C /* Grocery List watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grocery List watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC208132673E71D00EAAA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FCC208152673E71F00EAAA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC208172673E71F00EAAA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2081C2673E71F00EAAA4C /* Grocery List watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Grocery List watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC208212673E71F00EAAA4C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FCC208232673E71F00EAAA4C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FCC208252673E71F00EAAA4C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FCC208272673E71F00EAAA4C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FCC208292673E72000EAAA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC2082B2673E72000EAAA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2082C2673E72000EAAA4C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FCC208532674D4BF00EAAA4C /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		FCC208792676773700EAAA4C /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC207F32673E63000EAAA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC208192673E71F00EAAA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCC207ED2673E63000EAAA4C = {
+			isa = PBXGroup;
+			children = (
+				FCC207F82673E63000EAAA4C /* Grocery List */,
+				FCC208112673E71D00EAAA4C /* Grocery List watch */,
+				FCC208202673E71F00EAAA4C /* Grocery List watch Extension */,
+				FCC207F72673E63000EAAA4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCC207F72673E63000EAAA4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCC207F62673E63000EAAA4C /* Grocery List.app */,
+				FCC208102673E71D00EAAA4C /* Grocery List watch.app */,
+				FCC2081C2673E71F00EAAA4C /* Grocery List watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCC207F82673E63000EAAA4C /* Grocery List */ = {
+			isa = PBXGroup;
+			children = (
+				FCC207F92673E63000EAAA4C /* AppDelegate.swift */,
+				FCC207FB2673E63000EAAA4C /* SceneDelegate.swift */,
+				FCC207FD2673E63000EAAA4C /* ViewController.swift */,
+				FCC207FF2673E63000EAAA4C /* Main.storyboard */,
+				FCC208022673E63600EAAA4C /* Assets.xcassets */,
+				FCC208042673E63600EAAA4C /* LaunchScreen.storyboard */,
+				FCC208072673E63600EAAA4C /* Info.plist */,
+			);
+			path = "Grocery List";
+			sourceTree = "<group>";
+		};
+		FCC208112673E71D00EAAA4C /* Grocery List watch */ = {
+			isa = PBXGroup;
+			children = (
+				FCC208122673E71D00EAAA4C /* Interface.storyboard */,
+				FCC208152673E71F00EAAA4C /* Assets.xcassets */,
+				FCC208172673E71F00EAAA4C /* Info.plist */,
+			);
+			path = "Grocery List watch";
+			sourceTree = "<group>";
+		};
+		FCC208202673E71F00EAAA4C /* Grocery List watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FCC208212673E71F00EAAA4C /* InterfaceController.swift */,
+				FCC208232673E71F00EAAA4C /* ExtensionDelegate.swift */,
+				FCC208252673E71F00EAAA4C /* NotificationController.swift */,
+				FCC208272673E71F00EAAA4C /* ComplicationController.swift */,
+				FCC208292673E72000EAAA4C /* Assets.xcassets */,
+				FCC2082B2673E72000EAAA4C /* Info.plist */,
+				FCC2082C2673E72000EAAA4C /* PushNotificationPayload.apns */,
+				FCC208532674D4BF00EAAA4C /* RowController.swift */,
+				FCC208792676773700EAAA4C /* Row.swift */,
+			);
+			path = "Grocery List watch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCC207F52673E63000EAAA4C /* Grocery List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC2080A2673E63600EAAA4C /* Build configuration list for PBXNativeTarget "Grocery List" */;
+			buildPhases = (
+				FCC207F22673E63000EAAA4C /* Sources */,
+				FCC207F32673E63000EAAA4C /* Frameworks */,
+				FCC207F42673E63000EAAA4C /* Resources */,
+				FCC208372673E72000EAAA4C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC2082E2673E72000EAAA4C /* PBXTargetDependency */,
+			);
+			name = "Grocery List";
+			productName = "Grocery List";
+			productReference = FCC207F62673E63000EAAA4C /* Grocery List.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCC2080F2673E71D00EAAA4C /* Grocery List watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC208342673E72000EAAA4C /* Build configuration list for PBXNativeTarget "Grocery List watch" */;
+			buildPhases = (
+				FCC2080E2673E71D00EAAA4C /* Resources */,
+				FCC208332673E72000EAAA4C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC2081F2673E71F00EAAA4C /* PBXTargetDependency */,
+			);
+			name = "Grocery List watch";
+			productName = "Grocery List watch";
+			productReference = FCC208102673E71D00EAAA4C /* Grocery List watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FCC2081B2673E71F00EAAA4C /* Grocery List watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC208302673E72000EAAA4C /* Build configuration list for PBXNativeTarget "Grocery List watch Extension" */;
+			buildPhases = (
+				FCC208182673E71F00EAAA4C /* Sources */,
+				FCC208192673E71F00EAAA4C /* Frameworks */,
+				FCC2081A2673E71F00EAAA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grocery List watch Extension";
+			productName = "Grocery List watch Extension";
+			productReference = FCC2081C2673E71F00EAAA4C /* Grocery List watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCC207EE2673E63000EAAA4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FCC207F52673E63000EAAA4C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FCC2080F2673E71D00EAAA4C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FCC2081B2673E71F00EAAA4C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = FCC207F12673E63000EAAA4C /* Build configuration list for PBXProject "Grocery List" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCC207ED2673E63000EAAA4C;
+			productRefGroup = FCC207F72673E63000EAAA4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC207F52673E63000EAAA4C /* Grocery List */,
+				FCC2080F2673E71D00EAAA4C /* Grocery List watch */,
+				FCC2081B2673E71F00EAAA4C /* Grocery List watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCC207F42673E63000EAAA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC208062673E63600EAAA4C /* LaunchScreen.storyboard in Resources */,
+				FCC208032673E63600EAAA4C /* Assets.xcassets in Resources */,
+				FCC208012673E63000EAAA4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2080E2673E71D00EAAA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC208162673E71F00EAAA4C /* Assets.xcassets in Resources */,
+				FCC208142673E71D00EAAA4C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC2081A2673E71F00EAAA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2082A2673E72000EAAA4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCC207F22673E63000EAAA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC207FE2673E63000EAAA4C /* ViewController.swift in Sources */,
+				FCC207FA2673E63000EAAA4C /* AppDelegate.swift in Sources */,
+				FCC207FC2673E63000EAAA4C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC208182673E71F00EAAA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC208542674D4BF00EAAA4C /* RowController.swift in Sources */,
+				FCC208262673E71F00EAAA4C /* NotificationController.swift in Sources */,
+				FCC208282673E71F00EAAA4C /* ComplicationController.swift in Sources */,
+				FCC208242673E71F00EAAA4C /* ExtensionDelegate.swift in Sources */,
+				FCC2087A2676773700EAAA4C /* Row.swift in Sources */,
+				FCC208222673E71F00EAAA4C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCC2081F2673E71F00EAAA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC2081B2673E71F00EAAA4C /* Grocery List watch Extension */;
+			targetProxy = FCC2081E2673E71F00EAAA4C /* PBXContainerItemProxy */;
+		};
+		FCC2082E2673E72000EAAA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC2080F2673E71D00EAAA4C /* Grocery List watch */;
+			targetProxy = FCC2082D2673E72000EAAA4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCC207FF2673E63000EAAA4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC208002673E63000EAAA4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCC208042673E63600EAAA4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC208052673E63600EAAA4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FCC208122673E71D00EAAA4C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC208132673E71D00EAAA4C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCC208082673E63600EAAA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCC208092673E63600EAAA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCC2080B2673E63600EAAA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Grocery List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chavika-Kodithuwakku.Grocery-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCC2080C2673E63600EAAA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Grocery List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chavika-Kodithuwakku.Grocery-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCC208312673E72000EAAA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Grocery List watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chavika-Kodithuwakku.Grocery-List.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		FCC208322673E72000EAAA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Grocery List watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chavika-Kodithuwakku.Grocery-List.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		FCC208352673E72000EAAA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Grocery_List_watch_Extension;
+				INFOPLIST_FILE = "Grocery List watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chavika-Kodithuwakku.Grocery-List.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		FCC208362673E72000EAAA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Grocery_List_watch_Extension;
+				INFOPLIST_FILE = "Grocery List watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Chavika-Kodithuwakku.Grocery-List.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCC207F12673E63000EAAA4C /* Build configuration list for PBXProject "Grocery List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC208082673E63600EAAA4C /* Debug */,
+				FCC208092673E63600EAAA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC2080A2673E63600EAAA4C /* Build configuration list for PBXNativeTarget "Grocery List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC2080B2673E63600EAAA4C /* Debug */,
+				FCC2080C2673E63600EAAA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC208302673E72000EAAA4C /* Build configuration list for PBXNativeTarget "Grocery List watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC208312673E72000EAAA4C /* Debug */,
+				FCC208322673E72000EAAA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC208342673E72000EAAA4C /* Build configuration list for PBXNativeTarget "Grocery List watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC208352673E72000EAAA4C /* Debug */,
+				FCC208362673E72000EAAA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCC207EE2673E63000EAAA4C /* Project object */;
+}
